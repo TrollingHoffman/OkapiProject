@@ -12,19 +12,46 @@ body{
 
 .site-title
 {
+    position: absolute;
     text-align: center;
-    padding: 10px;
-    background-color: #99BC85;
+    padding: 0;
+    background-color: transparent;
     width:100%;
+    z-index: 2;
 }
 
 .site-title img
 {
-    width: 300px;
+    position: relative;
+    width: auto;
+    height: 240px;
     max-width: 70%;
-    height: auto;
-    max-height: 150px;
+    display: block;
+    margin: 0 auto;
     
+}
+
+.Background-title
+{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Background-title img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
 }
 
 header {
@@ -118,16 +145,20 @@ header nav ul li {
 {
     display: flex;
     align-items: center;
-    gap: 16px;
-    padding: 10px;
-    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    max-width: 1200px;
+    position: relative;
+    margin:auto;
+    z-index: 2;
     
 }
 
 .flex-container img
 {
-    width: 38%;
-    max-width: 280px;
+    width: 40%;
+    min-width: 350px;
+    max-width: 500px;
     height: auto;
     object-fit: cover;
 }
